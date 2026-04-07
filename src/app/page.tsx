@@ -787,7 +787,21 @@ export default function Home() {
 
               {/* Contact Form */}
               <div className="rounded-xl border border-warm-gray bg-white p-8 shadow-sm">
-                <form action="#" method="POST" className="space-y-5">
+                <form
+                  action="https://api.web3forms.com/submit"
+                  method="POST"
+                  className="space-y-5"
+                >
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="e5b94148-e63c-4b2a-a5e1-e403093edc16"
+                  />
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://b4builders.in/thank-you"
+                  />
                   <div>
                     <label
                       htmlFor="name"
@@ -798,6 +812,8 @@ export default function Home() {
                     <input
                       type="text"
                       id="name"
+                      name="name"
+                      required
                       placeholder="Enter your full name"
                       className="w-full rounded-lg border border-warm-gray bg-warm-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/40 focus:border-gold focus:ring-1 focus:ring-gold focus:outline-none"
                     />
@@ -813,6 +829,8 @@ export default function Home() {
                       <input
                         type="tel"
                         id="phone"
+                        name="phone"
+                        required
                         placeholder="+91 98765 43210"
                         className="w-full rounded-lg border border-warm-gray bg-warm-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/40 focus:border-gold focus:ring-1 focus:ring-gold focus:outline-none"
                       />
@@ -827,6 +845,8 @@ export default function Home() {
                       <input
                         type="email"
                         id="email"
+                        name="email"
+                        required
                         placeholder="you@example.com"
                         className="w-full rounded-lg border border-warm-gray bg-warm-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/40 focus:border-gold focus:ring-1 focus:ring-gold focus:outline-none"
                       />
@@ -841,6 +861,8 @@ export default function Home() {
                     </label>
                     <select
                       id="service"
+                      name="service"
+                      required
                       className="w-full rounded-lg border border-warm-gray bg-warm-white px-4 py-3 text-sm text-charcoal focus:border-gold focus:ring-1 focus:ring-gold focus:outline-none"
                       defaultValue=""
                     >
@@ -863,6 +885,8 @@ export default function Home() {
                     </label>
                     <textarea
                       id="message"
+                      name="message"
+                      required
                       rows={4}
                       placeholder="Tell us about your project..."
                       className="w-full resize-none rounded-lg border border-warm-gray bg-warm-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/40 focus:border-gold focus:ring-1 focus:ring-gold focus:outline-none"
@@ -986,6 +1010,25 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* WhatsApp Float Button */}
+      <a
+        href="https://wa.me/919035817133?text=Hi%20B4%20Builders%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20services."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        className="fixed bottom-6 right-6 z-50 flex h-[60px] w-[60px] items-center justify-center rounded-full bg-[#25D366] shadow-lg shadow-black/20 transition-transform duration-200 hover:scale-110"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          width="32"
+          height="32"
+          fill="white"
+        >
+          <path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.742 5.486 2.035 7.788L0 32l8.418-2.01A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.795-1.867l-.486-.29-5.006 1.196 1.25-4.87-.317-.5A13.234 13.234 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.815c-.398-.199-2.352-1.16-2.717-1.292-.364-.133-.63-.199-.895.199-.265.398-1.028 1.292-1.26 1.558-.232.265-.464.298-.862.1-.398-.2-1.682-.62-3.203-1.976-1.184-1.057-1.983-2.362-2.215-2.76-.232-.398-.025-.613.174-.811.179-.178.398-.464.597-.696.2-.232.266-.398.398-.663.133-.265.067-.497-.033-.696-.1-.199-.895-2.157-1.227-2.952-.322-.775-.65-.67-.895-.682l-.762-.013c-.265 0-.696.1-1.061.497-.364.398-1.393 1.36-1.393 3.317s1.426 3.847 1.625 4.112c.199.265 2.806 4.285 6.798 6.01.95.41 1.692.655 2.27.839.953.304 1.822.261 2.508.158.765-.114 2.352-.961 2.684-1.889.332-.928.332-1.724.232-1.889-.1-.166-.364-.265-.762-.464z" />
+        </svg>
+      </a>
     </>
   );
 }
