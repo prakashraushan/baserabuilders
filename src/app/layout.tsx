@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "B4 Builders — Premium Construction & Interior Design in Bangalore",
+  title: "Baserabuilders — Premium Construction & Interior Design in Bangalore",
   description:
-    "B4 Builders delivers luxury construction, interior design, renovation, and modular kitchen solutions across Bangalore. 12+ years of trusted craftsmanship.",
+    "Baserabuilders delivers luxury construction, interior design, renovation, and modular kitchen solutions across Bangalore. 12+ years of trusted craftsmanship.",
 };
 
 export default function RootLayout({

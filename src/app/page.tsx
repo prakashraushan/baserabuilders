@@ -178,7 +178,7 @@ const testimonials = [
     name: "Rajesh & Meena Sharma",
     location: "Whitefield, Bangalore",
     quote:
-      "B4 Builders transformed our 3BHK into a dream home. The attention to detail, quality of materials, and timely delivery exceeded our expectations. Highly recommended!",
+  "Baserabuilders transformed our 3BHK into a dream home. The attention to detail, quality of materials, and timely delivery exceeded our expectations. Highly recommended!",
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
   },
@@ -327,7 +327,7 @@ export default function Home() {
             href="#"
             className="text-xl font-bold tracking-tight text-charcoal"
           >
-            B4<span className="text-gold"> Builders</span>
+            basera<span className="text-gold">builders</span>
           </a>
 
           <div className="hidden items-center gap-8 lg:flex">
@@ -502,7 +502,7 @@ export default function Home() {
 
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">
-                  Why B4 Builders
+                  Why baserabuilders
                 </p>
                 <h2 className="mt-3 text-3xl font-bold tracking-tight text-charcoal sm:text-4xl">
                   Why Homeowners Trust Us
@@ -722,7 +722,7 @@ export default function Home() {
                       Email
                     </h4>
                     <p className="mt-1 text-sm text-charcoal/60">
-                      info@b4builders.in
+                      info@baserabuilders.in
                     </p>
                   </div>
                 </div>
@@ -800,7 +800,7 @@ export default function Home() {
                   <input
                     type="hidden"
                     name="redirect"
-                    value="https://b4builders.in/thank-you"
+                    value="https://baserabuilders.in/thank-you"
                   />
                   <div>
                     <label
@@ -915,7 +915,7 @@ export default function Home() {
             {/* Brand */}
             <div>
               <p className="text-xl font-bold tracking-tight text-warm-white">
-                B4<span className="text-gold"> Builders</span>
+                basera<span className="text-gold">builders</span>
               </p>
               <p className="mt-3 max-w-xs text-sm leading-relaxed text-warm-white/50">
                 Premium construction and interior design company delivering
@@ -994,7 +994,7 @@ export default function Home() {
               </h4>
               <ul className="mt-4 space-y-2.5 text-sm text-warm-white/50">
                 <li>+91 98765 43210</li>
-                <li>info@b4builders.in</li>
+                <li>info@baserabuilders.in</li>
                 <li>
                   123, 5th Cross, HSR Layout,
                   <br />
@@ -1005,7 +1005,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10 border-t border-white/10 pt-6 text-center text-xs text-warm-white/30">
-            &copy; 2026 B4 Builders. All rights reserved. | Designed &amp; Built
+            &copy; 2026 baserabuilders. All rights reserved. | Designed &amp; Built
             with ♥ in Bangalore
           </div>
         </div>
@@ -1013,7 +1013,7 @@ export default function Home() {
 
       {/* WhatsApp Float Button */}
       <a
-        href="https://wa.me/919035817133?text=Hi%20B4%20Builders%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20services."
+        href="https://wa.me/919035817133?text=Hi%20Baserabuilders%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20services."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
