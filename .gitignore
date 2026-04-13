@@ -3,3 +3,7 @@ appengine-generated/
 node_modules/
 .next/
 __MACOSX/
+
+# Environment variables — never commit these
+.env.local
+.env.*.local
