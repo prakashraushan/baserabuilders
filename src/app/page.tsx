@@ -71,20 +71,19 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 py-24 lg:px-8">
           <div className="max-w-2xl">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold">
-              Premium Construction &amp; Interior Design — Bangalore
+              Home Builders &amp; Contractors — Bangalore
             </p>
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-warm-white sm:text-5xl lg:text-6xl">
-              Building Dreams,
+              Best Construction
               <br />
-              Crafting Extraordinary
-              <br />
-              Spaces
+              Company in Bangalore
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-warm-white/75">
-              Bangalore&apos;s most trusted construction and interior design
-              company. From ground-up construction to stunning interiors — we
-              bring your vision to life with over 12 years of craftsmanship and
-              150+ projects delivered.
+              Looking for reliable construction services in Bangalore? We are
+              one of the leading home construction companies — offering
+              end-to-end solutions from planning to execution. Whether you need
+              house construction, home renovation, or commercial build-outs, we
+              deliver quality, transparency, and on-time completion.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
@@ -120,6 +119,57 @@ export default function HomePage() {
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── Intro / SEO paragraph ── */}
+      <section className="bg-warm-white py-12 sm:py-16" aria-label="About our services">
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-2xl font-bold tracking-tight text-charcoal sm:text-3xl">
+              Your Trusted Home Builders &amp; Building Contractors Near You
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-charcoal/65">
+              Baserabuilders is Bangalore&apos;s most trusted construction partner
+              for homeowners and businesses. As experienced{" "}
+              <strong className="font-semibold text-charcoal">
+                home builders and building contractors near you
+              </strong>
+              , we specialise in complete{" "}
+              <strong className="font-semibold text-charcoal">
+                house construction
+              </strong>
+              , custom home building, home renovation, interior design, and
+              commercial construction — all under one roof. We serve clients
+              across{" "}
+              <strong className="font-semibold text-charcoal">
+                Whitefield, Sarjapur, Electronic City, Marathahalli, HSR Layout,
+                Koramangala, Indiranagar, Jayanagar
+              </strong>{" "}
+              and everywhere across Bangalore.
+            </p>
+            <div className="mt-6 flex flex-wrap justify-center gap-2">
+              {[
+                "Whitefield",
+                "Sarjapur",
+                "Electronic City",
+                "Marathahalli",
+                "HSR Layout",
+                "Koramangala",
+                "Indiranagar",
+                "Jayanagar",
+                "Hebbal",
+                "Malleshwaram",
+              ].map((area) => (
+                <span
+                  key={area}
+                  className="rounded-full border border-warm-gray bg-white px-4 py-1.5 text-xs font-medium text-charcoal/70"
+                >
+                  {area}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

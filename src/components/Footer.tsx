@@ -6,6 +6,7 @@ const quickLinks = [
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Projects", href: "/projects" },
+  { label: "Construction Cost Guide", href: "/construction-cost-bangalore" },
   { label: "Contact", href: "/contact" },
 ];
 
