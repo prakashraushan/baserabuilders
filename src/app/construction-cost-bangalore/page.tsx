@@ -247,46 +247,39 @@ export default function ConstructionCostPage() {
         </div>
       </section>
 
-      {/* ── Areas Served ── */}
-      <section className="bg-white py-12" aria-labelledby="areas-heading">
+      {/* ── Areas Served (elegant strip) ── */}
+      <section className="border-b border-warm-gray bg-white py-8" aria-label="Areas served in Bangalore">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2
-              id="areas-heading"
-              className="text-xl font-bold text-charcoal sm:text-2xl"
-            >
-              We Build Across Bangalore
-            </h2>
-            <p className="mt-2 text-sm text-charcoal/60">
-              Our construction services are available across all major areas of
-              Bangalore — and beyond.
+          <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+            <p className="text-sm font-semibold text-charcoal/50 sm:shrink-0">
+              Serving clients across Bangalore:
             </p>
-          </div>
-          <div className="mt-6 flex flex-wrap justify-center gap-2">
-            {[
-              "Whitefield",
-              "Sarjapur",
-              "Electronic City",
-              "Marathahalli",
-              "HSR Layout",
-              "Koramangala",
-              "Indiranagar",
-              "Jayanagar",
-              "Hebbal",
-              "Malleshwaram",
-              "Bannerghatta Road",
-              "Yelahanka",
-              "JP Nagar",
-              "Rajajinagar",
-              "Banashankari",
-            ].map((area) => (
-              <span
-                key={area}
-                className="rounded-full border border-warm-gray bg-warm-white px-4 py-2 text-sm font-medium text-charcoal/70"
-              >
-                {area}
-              </span>
-            ))}
+            <div className="flex flex-wrap justify-center gap-2 sm:justify-end">
+              {[
+                "Whitefield",
+                "Sarjapur",
+                "Electronic City",
+                "Marathahalli",
+                "HSR Layout",
+                "Koramangala",
+                "Indiranagar",
+                "Jayanagar",
+                "Hebbal",
+                "Malleshwaram",
+                "Bannerghatta Road",
+                "Yelahanka",
+                "JP Nagar",
+                "Rajajinagar",
+                "Banashankari",
+              ].map((area) => (
+                <span
+                  key={area}
+                  className="rounded-full bg-warm-gray/60 px-3.5 py-1 text-xs font-medium text-charcoal/60"
+                >
+                  {area}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
