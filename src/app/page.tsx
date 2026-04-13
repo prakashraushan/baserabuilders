@@ -4,7 +4,18 @@ import Link from "next/link";
 import { services, projects, testimonials, stats, SITE_URL } from "@/lib/data";
 
 export const metadata: Metadata = {
+  title:
+    "Best Construction Company in Bangalore | Home Builders & Contractors Near You",
+  description:
+    "Looking for reliable construction services in Bangalore? Baserabuilders is one of the leading home construction companies — offering end-to-end house construction, home renovation, custom home builders, and commercial construction. Transparent pricing, on-time delivery, premium quality.",
   alternates: { canonical: SITE_URL },
+  openGraph: {
+    title:
+      "Best Construction Company in Bangalore | Home Builders & Contractors",
+    description:
+      "Baserabuilders — leading home builders and building contractors in Bangalore. House construction, home renovation, interior design & more. Get a free quote today.",
+    url: SITE_URL,
+  },
 };
 
 // Check icon for "Why Us" points
@@ -71,19 +82,20 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 py-24 lg:px-8">
           <div className="max-w-2xl">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold">
-              Home Builders &amp; Contractors — Bangalore
+              Premium Construction &amp; Interior Design — Bangalore
             </p>
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-warm-white sm:text-5xl lg:text-6xl">
-              Best Construction
+              Building Dreams,
               <br />
-              Company in Bangalore
+              Crafting Extraordinary
+              <br />
+              Spaces
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-warm-white/75">
-              Looking for reliable construction services in Bangalore? We are
-              one of the leading home construction companies — offering
-              end-to-end solutions from planning to execution. Whether you need
-              house construction, home renovation, or commercial build-outs, we
-              deliver quality, transparency, and on-time completion.
+              Bangalore&apos;s most trusted construction and interior design
+              company. From ground-up construction to stunning interiors — we
+              bring your vision to life with over 12 years of craftsmanship and
+              150+ projects delivered.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
@@ -122,33 +134,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Intro / SEO paragraph ── */}
-      <section className="bg-warm-white py-12 sm:py-16" aria-label="About our services">
+      {/* ── Areas We Serve ── */}
+      <section className="border-b border-warm-gray bg-white py-8" aria-label="Areas served in Bangalore">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-2xl font-bold tracking-tight text-charcoal sm:text-3xl">
-              Your Trusted Home Builders &amp; Building Contractors Near You
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-charcoal/65">
-              Baserabuilders is Bangalore&apos;s most trusted construction partner
-              for homeowners and businesses. As experienced{" "}
-              <strong className="font-semibold text-charcoal">
-                home builders and building contractors near you
-              </strong>
-              , we specialise in complete{" "}
-              <strong className="font-semibold text-charcoal">
-                house construction
-              </strong>
-              , custom home building, home renovation, interior design, and
-              commercial construction — all under one roof. We serve clients
-              across{" "}
-              <strong className="font-semibold text-charcoal">
-                Whitefield, Sarjapur, Electronic City, Marathahalli, HSR Layout,
-                Koramangala, Indiranagar, Jayanagar
-              </strong>{" "}
-              and everywhere across Bangalore.
+          <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+            <p className="text-sm font-semibold text-charcoal/50 sm:shrink-0">
+              Serving clients across Bangalore:
             </p>
-            <div className="mt-6 flex flex-wrap justify-center gap-2">
+            <div className="flex flex-wrap justify-center gap-2 sm:justify-end">
               {[
                 "Whitefield",
                 "Sarjapur",
@@ -163,7 +156,7 @@ export default function HomePage() {
               ].map((area) => (
                 <span
                   key={area}
-                  className="rounded-full border border-warm-gray bg-white px-4 py-1.5 text-xs font-medium text-charcoal/70"
+                  className="rounded-full bg-warm-gray/60 px-3.5 py-1 text-xs font-medium text-charcoal/60"
                 >
                   {area}
                 </span>
